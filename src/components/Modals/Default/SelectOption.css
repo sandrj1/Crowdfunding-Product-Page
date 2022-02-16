@@ -1,0 +1,137 @@
+.option__container {
+    width: 86%;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0.75em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25em;
+}
+
+.option__container label {
+    display: flex;
+    width: 90%;
+}
+
+
+.radio__container {
+    display: flex;
+    align-items: center;
+    margin-top: 1.75em;
+}
+
+.radio__container > input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;  
+    padding: 4.5px;
+    background-clip: content-box;
+    border: 1.75px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.radio__container > input[type='radio']:checked {
+    background-color: var(--moderate-cyan);
+}
+
+.option__title {
+    padding-left: 1em;
+    font-size: 0.8em;
+}
+
+.option__container h3 {
+    margin: 0;
+}
+
+.option__title h4 {
+    margin: 0.75em 0 0;
+    font-size: 1.15em;
+    font-weight: var(--fw-normal);
+    color: var(--moderate-cyan);
+}
+
+.option__description {
+    padding: 2em 0.5em 1em;
+    color: var(--dark-gray);
+    font-size: 0.88em;
+    line-height: 1.75em;
+}
+
+.option__quantity {
+    padding: 0 0.5em;
+}
+
+.option__quantity span {
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    font-size: 1.3em;
+    padding-right: 0.25em;
+}
+
+.pledge__container {
+    width: 100%;
+    margin: 0.75em 0 0.5em;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: none; */
+
+}
+
+.pledge__container--checked {
+    display: block;
+}
+
+.pledge__container > p {
+    text-align: center;
+    margin-top: 1.75em;
+}
+
+.pledge__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+}
+
+.input__container {
+    display: flex;
+    border-radius: 40px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    width: 35%;
+}
+
+.input__container p {
+    padding-left: 1.75em;
+    width: fit-content;
+    font-weight: var(--fw-bold);
+}
+.input__container input {
+    width: 50%;
+    height: 93%;
+    border-radius: 40px;
+    border: none;
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    font-size: 1em;
+    transform: translate(0.25em);
+}
+
+.input__container input::placeholder {
+    color: var(--black);
+}
+
+.pledge__buttons button {
+    width: 40%;
+    border-radius: 40px;
+    color: #fff;
+    background: var(--moderate-cyan);
+    border: none;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.05em;
+}

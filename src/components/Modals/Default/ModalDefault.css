@@ -1,0 +1,46 @@
+.modal__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh + 200%);
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+
+.section--default {
+    width: 87.5%;
+    height: 85%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(7.5em);
+}
+
+.section__title {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.25em;
+    font-size: 0.78em;
+}
+
+.section__title img {
+    width: 15px;
+    height: 15px;
+    transform: translateY(1.6em);
+}
+
+.section--default p {
+    width: 86%;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    color: var(--dark-gray);
+    font-size: 0.88em;
+    line-height: 1.75em;
+}

@@ -49,7 +49,7 @@
 }
 
 @media (hover:none) {
-    .navbar a:active{
+    .navbar a:active {
         color: var(--dark-gray);
     }
 }
@@ -57,14 +57,15 @@
 
 /* Desktop version */
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 768px) {
     .navbar__button--open {
         display: none;
     }
+
     .navbar__container--desktop {
         display: block;
     }
+    
     .navbar--desktop a {
         padding-left: 2em;
         font-weight: var(--fw-normal);

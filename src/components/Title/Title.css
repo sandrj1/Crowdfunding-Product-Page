@@ -1,12 +1,12 @@
 .title__container {
-    width: 90%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: auto;
     background: white;
-    border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .title__logo {
@@ -15,39 +15,39 @@
 
 .title__container h1 {
     width: 90%;
+    margin-top: 0;
     font-size: 1.25em;
     text-align: center;
-    margin-top: 0;
 }
 
 .title__container p {
+    width: 90%;
+    margin: 0.5em 0 2em;
+    font-size: 0.8em;
     color: var(--dark-gray);
     text-align: center;
-    width: 90%;
-    font-size: 0.8em;
-    margin: 0.5em 0 2em;
 }
 
 .buttons {
     display: flex;
+    justify-content: center;
     height: 56px;
     margin-bottom: 2em;
     padding: auto;
-    justify-content: center;
     transform: translateX(-6px);
 }
 
 .button--left {
     width: 15em;
-    background: var(--moderate-cyan);
+    margin-right: 0.75em;
     border: none;
     border-radius: 40px;
-    color: #fff;
-    font-weight: var(--fw-bold);
-    letter-spacing: 0.05em;
-    margin-right: 0.75em;
-    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    background: var(--moderate-cyan);
+    font-weight: var(--fw-bold);
+    color: #fff;
+    letter-spacing: 0.05em;
+    cursor: pointer;
 }
 
 .button--left:active {
@@ -66,12 +66,11 @@
 }
 
 .button--right {
-    color: var(--dark-gray);
-    font-weight: var(--fw-bold);
     display: flex;
     align-items: center;
     width: 22%;
-    
+    font-weight: var(--fw-bold);
+    color: var(--dark-gray);
 }
 
 @media (hover:hover) {
@@ -82,23 +81,22 @@
 
 .button--right img {
     z-index: 1;
-    margin: 0;
     width: 56px;
-    background: rgba(0, 0, 0, 0.05);
+    margin: 0;
     border-radius: 40px;
-    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    background: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
 
 #bookmark {
     display: none;
 }
 
-
 .button--right label {
-    font-size: 0.9em;
     position: relative;
     width: 0;
+    font-size: 0.9em;
 }
 
 .button--right label span {
@@ -110,7 +108,7 @@
     color: var(--moderate-cyan);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .title__container {
         width: 57.5%;
     }
@@ -120,8 +118,8 @@
     }
 
     .title__container p {
-        font-size: 1.05em;
         margin: 0em 0 2.5em;
+        font-size: 1.05em;
     }
 
     .buttons {

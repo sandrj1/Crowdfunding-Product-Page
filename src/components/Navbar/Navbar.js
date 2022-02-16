@@ -4,7 +4,6 @@ import closeMenu from '../../images/icon-close-menu.svg';
 import { useState } from 'react';
 import reactDom from 'react-dom';
 
-
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return <nav>
