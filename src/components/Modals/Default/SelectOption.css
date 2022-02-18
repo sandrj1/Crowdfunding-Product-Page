@@ -1,24 +1,30 @@
-.option__container {
-    width: 86%;
-    border: 1.5px solid rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 0.75em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1.25em;
-}
-
-.option__container label {
+.option__label, .option__label--disabled {
     display: flex;
     width: 90%;
 }
 
+.option__label--disabled h3,
+.option__label--disabled h4,
+.option__label--disabled .option__description,
+.option__label--disabled p {
+    opacity: 0.5;
+}
 
 .radio__container {
     display: flex;
     align-items: center;
     margin-top: 1.75em;
+}
+
+@media (hover:hover) {
+    .radio__container {
+        color: var(--black);
+        transition: color 0.5s ease-in-out;
+    }
+    .radio__container:hover{
+        color: var(--moderate-cyan);
+        transition: color 0.4s ease-in-out;
+    }
 }
 
 .radio__container > input[type='radio'] {
@@ -32,6 +38,7 @@
     background-clip: content-box;
     border: 1.75px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .radio__container > input[type='radio']:checked {
@@ -41,6 +48,7 @@
 .option__title {
     padding-left: 1em;
     font-size: 0.8em;
+    cursor: pointer;
 }
 
 .option__container h3 {
@@ -72,6 +80,34 @@
     padding-right: 0.25em;
 }
 
+
+
+
+
+
+
+
+
+/* VERSION WITHOUT MAP */
+
+/* 
+
+.option__container {
+    width: 86%;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0.75em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25em;
+}
+
+.option__container label {
+    display: flex;
+    width: 90%;
+} 
+
 .pledge__container {
     width: 100%;
     margin: 0.75em 0 0.5em;
@@ -79,12 +115,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: none; */
+    display: none;
 
 }
 
-.pledge__container--checked {
-    display: block;
+.pledge__container.checked {
+    display: flex;
 }
 
 .pledge__container > p {
@@ -120,6 +156,7 @@
     color: var(--black);
     font-size: 1em;
     transform: translate(0.25em);
+    outline: none;
 }
 
 .input__container input::placeholder {
@@ -134,4 +171,6 @@
     border: none;
     font-weight: var(--fw-bold);
     letter-spacing: 0.05em;
-}
+} */
+
+/* END VERSION WITHOUT MAP */

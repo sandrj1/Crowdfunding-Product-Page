@@ -34,6 +34,7 @@
     width: 15px;
     height: 15px;
     transform: translateY(1.6em);
+    cursor: pointer;
 }
 
 .section--default p {
@@ -44,3 +45,40 @@
     font-size: 0.88em;
     line-height: 1.75em;
 }
+
+/* VERSION WITH MAP */
+
+.option__container {
+    width: 86%;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0.75em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25em;
+    
+}
+
+.option__container.disabled {
+    opacity: 0.75;
+}
+
+.option__container.selected {
+    border: 2px solid var(--moderate-cyan);
+}
+
+details {
+    width: 100%;
+}
+
+.details--disabled {
+    pointer-events: none;
+}
+
+summary {
+    display: flex;
+    justify-content: center;
+}
+
+/* END VERSION WITH MAP */

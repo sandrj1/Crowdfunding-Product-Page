@@ -1,0 +1,89 @@
+.pledge__container {
+    width: 100%;
+    margin: 0.75em 0 0.5em;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pledge__container > p {
+    text-align: center;
+    margin-top: 1.75em;
+}
+
+.pledge__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+}
+
+.input__container {
+    display: flex;
+    border-radius: 40px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    width: 35%;
+}
+
+.input__container:hover {
+    border: 1.5px solid var(--moderate-cyan);
+}
+
+.input__container p {
+    padding-left: 1.75em;
+    width: fit-content;
+    font-weight: var(--fw-bold);
+}
+.input__container input {
+    width: 50%;
+    height: 90%;
+    border-radius: 40px;
+    border: none;
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    font-size: 1em;
+    transform: translate(0.25em);
+    outline: none;
+}
+
+
+.input__container input::placeholder {
+    color: var(--black);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pledge__buttons button {
+    width: 40%;
+    border-radius: 40px;
+    color: #fff;
+    background: var(--moderate-cyan);
+    border: none;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover:none) {
+    .pledge__buttons button:active {
+        outline: 2px solid var(--moderate-cyan);
+        outline-offset: -1px;
+    }
+}
+
+@media (hover:hover) {
+    .pledge__buttons button:hover {
+        background: var(--dark-cyan);
+    }
+
+    .pledge__buttons button:active {
+        outline: 2px solid var(--dark-cyan);
+        outline-offset: -1px;
+    }
+}
