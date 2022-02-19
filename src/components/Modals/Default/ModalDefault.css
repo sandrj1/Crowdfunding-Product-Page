@@ -46,8 +46,6 @@
     line-height: 1.75em;
 }
 
-/* VERSION WITH MAP */
-
 .option__container {
     width: 86%;
     border: 1.5px solid rgba(0, 0, 0, 0.1);
@@ -81,4 +79,36 @@ summary {
     justify-content: center;
 }
 
-/* END VERSION WITH MAP */
+/* Desktop version */
+
+@media screen and (min-width: 768px){
+    .section--default {
+        width: 50.5%;
+        transform: translateY(11.5em);
+    }
+
+    .section__title {
+        padding-top: 1.75em;
+        font-size: 1em;
+    }
+
+    .section__title img {
+        transform: translate(1em, 0.5em);
+    }
+
+    .section--default p {
+        width: unset;
+        font-size: 1em;
+    }
+
+    .section--default > p {
+        width: 86%;
+        margin-top: -0.25em;
+        margin-bottom: 1.25em;
+        font-size: 1em;
+    }
+
+    .option__container {
+        padding-bottom: 1.2em;
+    }
+}

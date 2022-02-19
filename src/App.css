@@ -1,3 +1,7 @@
+.app {
+    overflow-x: hidden;
+}
+
 .app__header {
     height: 18.5em;
     width: 100vw;

@@ -1,13 +1,15 @@
 import './Title.css';
 import logo from '../../images/logo-mastercraft.svg';
 import bookmarked from '../../images/icon-bookmarked.svg';
-import { useState } from 'react';
+import { OptionContext } from '../../context/OptionProvider';
+import { useState, useContext } from 'react';
 import Bookmark from './Bookmark';
 import Modal from '../Modals/Default/ModalDefault'
 
 export default function Title() {
+    const { modalDefault, setModalDefault } = useContext(OptionContext)
     const [checked, setChecked] = useState(false);
-    const [modalDefault, setModalDefault] = useState(false);
+    
     function handleBookmark(e) {
         if (e.target.checked) {
             setChecked(true);
@@ -43,7 +45,7 @@ export default function Title() {
             </div>
         </div>
         {modalDefault
-            ? <Modal setModalDefault={setModalDefault}/> 
+            ? <Modal setModalDefault={setModalDefault} />
             : null
         }
     </>

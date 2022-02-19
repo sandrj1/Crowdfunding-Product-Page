@@ -7,7 +7,13 @@
     align-items: center;
 }
 
-.pledge__container > p {
+.pledge__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pledge__box > p {
     text-align: center;
     margin-top: 1.75em;
 }
@@ -85,5 +91,44 @@ input[type=number]::-webkit-inner-spin-button {
     .pledge__buttons button:active {
         outline: 2px solid var(--dark-cyan);
         outline-offset: -1px;
+    }
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px){
+    .pledge__container{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1em;
+    }
+    .pledge__box {
+        width: 91%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.35em;
+    }
+
+    .pledge__box > p {
+        text-align: start;
+        width: 30%;
+        margin: 0;
+    }
+
+    .pledge__buttons {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+    }
+
+    .input__container {
+        width: 6.5em;
+    }
+
+    .pledge__buttons button {
+        width: 9em;
+        margin-left: 1.5em;
     }
 }

@@ -1,86 +1,46 @@
 import './SelectOption.css';
+import { OptionContext } from '../../../context/OptionProvider';
+import { useContext, useState } from 'react';
 
-export default function SelectOption(props) {
+export default function SelectOption({ value, title, pledge, quantity, children }) {
+    const { openId } = useContext(OptionContext)
+    const [desktop, setDesktop] = useState(false);
+
     return <label
-        htmlFor={props.value} disabled={props.disabled} className={props.value === 'mahogany' ? 'option__label--disabled' : 'option__label'}>
+        htmlFor={value} className={value === 'mahogany' ? 'option__label--disabled' : 'option__label'}>
         <div className='option__content'>
             <div className="radio__container">
-                <input type='radio' id={props.value}
-                    name='options' value={props.value} disabled={props.disabled} /* checked={props.value === openId ? true : false} */
+                <input type='radio' id={value}
+                    name='options' value={value} checked={value === openId ? true : false}
                 />
                 <div className='option__title'>
-                    <h3>{props.title}</h3><>
-                        {props.pledge > 0
-                            ? <h4>Pledge ${props.pledge} or more</h4>
+                    <div className="option__title--desktop">
+                        <h3>{title}</h3>
+                        {pledge > 0
+                            ? <h4>Pledge ${pledge} or more</h4>
                             : null
                         }
-                    </>
+                    </div>
+                    <div className="quantity__container">
+                        {quantity
+                            ? <p className='option__quantity--desktop'><span>{quantity}</span> left</p>
+                            : null
+                        }
+                    </div>
+
+
+
                 </div>
             </div>
             <div className='option__description'>
-                {props.children}
+                {children}
             </div>
-            {props.quantity
+            {quantity
                 ? <>
-                    <p className='option__quantity'><span>{props.quantity}</span> left</p>
+                    <p className='option__quantity'><span>{quantity}</span> left</p>
                 </>
                 : null
             }
         </div>
     </label>
 }
-
-
-
-
-
-
-
-
-
-/* VERSION WITHOUT MAP */
-
-/* return <article className='option__container'>
-        <label htmlFor={props.value} disabled={props.disabled} className={props.disabled ? 'option__label--disabled' : null}>
-            <div className='option__content'>
-                <div className="radio__container">
-                    <input type='radio' id={props.value}
-                        name='options' value={props.value} disabled={props.disabled}
-                    />
-                    <div className='option__title'>
-                        <h3>{props.title}</h3>
-                        {props.reward
-                            ? <>
-                                <h4>Pledge ${props.pledge} or more</h4>
-                            </>
-                            : null
-                        }
-                    </div>
-                </div>
-                <div className='option__description'>
-                    {props.children}
-                </div>
-                {props.reward
-                    ? <>
-                        <p className='option__quantity'><span>{props.quantity}</span> left</p>
-                    </>
-                    : null
-                }
-            </div>
-        </label>
-        {props.reward
-            ? <div className='pledge__container checked'>
-                <p>Enter your pledge</p>
-                <div className='pledge__buttons'>
-                    <div className='input__container'>
-                        <p>$</p>
-                        <input type='number' min={props.pledge} placeholder={props.pledge} />
-                    </div>
-                    <button>Continue</button>
-                </div>
-            </div>
-            : null
-        }
-    </article> */
-
-/* END VERSION WITHOUT MAP */
