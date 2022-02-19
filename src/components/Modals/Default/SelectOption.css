@@ -21,7 +21,7 @@
         color: var(--black);
         transition: color 0.5s ease-in-out;
     }
-    .radio__container:hover{
+    .radio__container:hover {
         color: var(--moderate-cyan);
         transition: color 0.4s ease-in-out;
     }
@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-.option__container h3 {
+.option__title h3 {
     margin: 0;
 }
 
@@ -62,10 +62,14 @@
     color: var(--moderate-cyan);
 }
 
+.option__quantity--desktop {
+    display: none;
+}
+
 .option__description {
     padding: 2em 0.5em 1em;
-    color: var(--dark-gray);
     font-size: 0.88em;
+    color: var(--dark-gray);
     line-height: 1.75em;
 }
 
@@ -73,15 +77,11 @@
     padding: 0 0.5em;
 }
 
-.option__quantity--desktop {
-    display: none;
-}
-
 .option__quantity span {
+    padding-right: 0.25em;
+    font-size: 1.3em;
     font-weight: var(--fw-bold);
     color: var(--black);
-    font-size: 1.3em;
-    padding-right: 0.25em;
 }
 
 /* Desktop version */
@@ -90,6 +90,7 @@
     .option__label {
         width: 91.5%;
     }
+
     .option__content {
         display: flex;
         flex-direction: column;
@@ -100,40 +101,31 @@
     }
 
     .option__title {
-        width: 91.5%;
         display: flex;
+        align-items: center;
+        width: 91.5%;
         padding-left: 1.5em;
         font-size: 0.9em;
-        align-items: center;
         transform: translateY(-0.25em);
     }
 
     .option__title--desktop {
-        width: 80%;
         display: flex;
+        width: 80%;
     }
 
     .option__title h4 {
         margin-top: 0;
         margin-left: 1em;
     }
-
-    .option__description {
-        transform: translateY(-0.25em);
-        width: 91.5%;
-        padding: 0.5em 0 0.75em 3.1em;
-        font-size: 0.95em;
-    }
+    
     .quantity__container {
-        width: 20%;
         display: flex;
         justify-content: flex-end;
+        width: 20%;
         height: 3em;
     }
-    .option__quantity {
-        display: none;
-    }
-
+    
     .option__quantity--desktop {
         display: block;
     }
@@ -143,5 +135,16 @@
         font-weight: var(--fw-bold);
         color: var(--black);
         padding-right: 0.25em;
+    }
+
+    .option__description {
+        width: 91.5%;
+        padding: 0.5em 0 0.75em 3.1em;
+        font-size: 0.95em;
+        transform: translateY(-0.25em);
+    }
+
+    .option__quantity {
+        display: none;
     }
 }

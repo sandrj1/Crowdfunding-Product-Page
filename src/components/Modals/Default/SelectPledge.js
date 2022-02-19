@@ -1,6 +1,9 @@
 import './SelectPledge.css';
+import { useContext } from 'react';
+import { OptionContext } from '../../../context/OptionProvider';
 
 export default function SelectPledge({ pledge }) {
+    const { setModalCompleted } = useContext(OptionContext);
     const handleInput = (e) => {
         console.log(e.target.value)
     }
@@ -12,7 +15,7 @@ export default function SelectPledge({ pledge }) {
                     <p>$</p>
                     <input type='number' min={pledge} placeholder={pledge} onWheel={(e) => { e.target.blur() }} onKeyUp={(e) => { handleInput(e) }} />
                 </div>
-                <button>Continue</button>
+                <button onClick={() => { setModalCompleted(true) }}>Continue</button>
             </div>
         </div>
     </div >

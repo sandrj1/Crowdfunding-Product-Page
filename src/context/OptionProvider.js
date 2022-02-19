@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 export const OptionContext = createContext()
 
@@ -35,6 +35,7 @@ export default function OptionProvider({ children }) {
 
     const [modalDefault, setModalDefault] = useState(false);
     const [openId, setOpenId] = useState('');
+    const [modalCompleted, setModalCompleted] = useState(false);
 
     return (
         <OptionContext.Provider
@@ -43,7 +44,9 @@ export default function OptionProvider({ children }) {
                 modalDefault,
                 setModalDefault,
                 openId,
-                setOpenId
+                setOpenId,
+                modalCompleted,
+                setModalCompleted
             }}>
             {children}
         </OptionContext.Provider>

@@ -1,10 +1,10 @@
 .pledge__container {
-    width: 100%;
-    margin: 0.75em 0 0.5em;
-    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0.75em 0 0.5em;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .pledge__box {
@@ -14,22 +14,22 @@
 }
 
 .pledge__box > p {
-    text-align: center;
     margin-top: 1.75em;
+    text-align: center;
 }
 
 .pledge__buttons {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     margin-top: 0.5em;
 }
 
 .input__container {
     display: flex;
-    border-radius: 40px;
-    border: 1.5px solid rgba(0, 0, 0, 0.1);
     width: 35%;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
 }
 
 .input__container:hover {
@@ -37,22 +37,22 @@
 }
 
 .input__container p {
-    padding-left: 1.75em;
     width: fit-content;
+    padding-left: 1.75em;
     font-weight: var(--fw-bold);
 }
+
 .input__container input {
     width: 50%;
     height: 90%;
-    border-radius: 40px;
     border: none;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1em;
     font-weight: var(--fw-bold);
     color: var(--black);
-    font-size: 1em;
     transform: translate(0.25em);
-    outline: none;
 }
-
 
 .input__container input::placeholder {
     color: var(--black);
@@ -66,14 +66,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .pledge__buttons button {
     width: 40%;
-    border-radius: 40px;
-    color: #fff;
-    background: var(--moderate-cyan);
     border: none;
+    border-radius: 40px;
+    background: var(--moderate-cyan);
+    -webkit-tap-highlight-color: transparent;
     font-weight: var(--fw-bold);
+    color: #fff;
     letter-spacing: 0.05em;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover:none) {
@@ -103,18 +103,18 @@ input[type=number]::-webkit-inner-spin-button {
         margin-top: 1em;
     }
     .pledge__box {
-        width: 91%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 91%;
         margin-top: 1.35em;
     }
 
     .pledge__box > p {
-        text-align: start;
         width: 30%;
         margin: 0;
+        text-align: start;
     }
 
     .pledge__buttons {

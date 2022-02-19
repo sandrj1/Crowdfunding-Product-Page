@@ -1,6 +1,6 @@
 import bookmark from '../../images/icon-bookmark.svg';
 import hoverBookmark from '../../images/icon-bookmark-hover.svg';
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from 'react-responsive';
 
 export default function Bookmark(props) {
     const hover = useMediaQuery({ query: '(hover: hover)' });
