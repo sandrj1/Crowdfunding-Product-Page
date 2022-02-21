@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
+    /* height: fit-content; */
     height: calc(100vh + 200%);
     background: rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -15,10 +16,13 @@
     flex-direction: column;
     align-items: center;
     width: 87.5%;
-    height: 85%;
+    height: fit-content;
+    /* height: 85%; */
+    margin: 8.25em 0;
+    padding-bottom: 1.25em;
     border-radius: 10px;
     background: #fff;
-    transform: translateY(7.5em);
+    /* transform: translateY(7.5em); CAMBIATO PER MARGIN */
 }
 
 .section__title {
@@ -34,8 +38,16 @@
     height: 15px;
     transform: translateY(1.6em);
     cursor: pointer;
+    filter: invert(52%) sepia(1%) saturate(0%) hue-rotate(35deg) brightness(91%) contrast(90%);
+    transition: filter 0.4s ease-in-out;
 }
 
+@media (hover:hover) {
+    .section__title img:hover {
+        filter: none;
+        transition: filter 0.4s ease-in-out;
+    }
+}
 .section--default p {
     width: 86%;
     margin-top: 0.5em;
@@ -82,7 +94,8 @@ summary {
 @media screen and (min-width: 768px) {
     .section--default {
         width: 50.5%;
-        transform: translateY(11.5em);
+        /* transform: translateY(11.5em);  CAMBIATO PER MARGIN*/
+        margin: 11.5em 0;
     }
 
     .section__title {

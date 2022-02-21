@@ -1,0 +1,129 @@
+.reward__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86%;
+    margin-bottom: 1.5em;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.reward__container.disabled {
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+.reward__container.disabled h3,
+.reward__container.disabled p,
+.reward__container.disabled button {
+    opacity: 0.5;
+}
+
+.reward__title {
+    width: 86%;
+    font-size: 0.85em;
+}
+
+.reward__title h3 {
+    margin-top: 1.75em;
+    margin-bottom: 0;
+}
+
+.reward__title p {
+    margin-top: 0.35em;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    font-weight: var(--fw-normal);
+    color: var(--moderate-cyan);
+}
+
+.reward__description {
+    width: 86%;
+    margin-top: 1.5em;
+}
+
+.reward__button {
+    width: 86%;
+}
+
+.reward__button p {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.reward__button span {
+    margin-right: 0.3em;
+    font-size: 2em;
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.reward__button button {
+    width: 11.25em;
+    height: 3.5em;
+    margin: 0.5em 0 1.65em;
+    border: none;
+    border-radius: 40px;
+    background: var(--moderate-cyan);
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.01em;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.reward__container.disabled button {
+    background: var(--dark-gray);
+}
+
+@media (hover: none) {
+    .reward__button button:active {
+        outline: 2px solid var(--moderate-cyan);
+        outline-offset: -1px;
+    }
+}
+
+@media (hover:hover) {
+    .reward__button button:hover {
+        background: var(--dark-cyan);
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .reward__button button:active {
+        outline: 2px solid var(--dark-cyan);
+        outline-offset: -1px;
+    }
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+    .reward__title, .reward__description, .reward__button {
+        width: 91%;
+    }
+
+    .reward__title {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+
+    .reward__title p {
+        height: fit-content;
+        font-size: 1em;
+        transform: translateY(0.2em);
+    }
+
+    .reward__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75em;
+    }
+
+    .reward__button button {
+        font-size: 0.9em;
+    }
+}

@@ -34,9 +34,28 @@
     border: none;
     border-radius: 40px;
     background: var(--moderate-cyan);
+    -webkit-tap-highlight-color: transparent;
     font-weight: var(--fw-bold);
     color: #fff;
     letter-spacing: 0.025em;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.section--completed button:active {
+    outline: 2px solid var(--moderate-cyan);
+    outline-offset: -1px;
+}
+
+@media (hover:hover) {
+    .section--completed button:hover {
+        background: var(--dark-cyan);
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .section--completed button:active {
+        outline: 2px solid var(--dark-cyan);
+    }
 }
 
 /* Desktop version */

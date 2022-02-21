@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -16,16 +15,17 @@
 .title__container h1 {
     width: 90%;
     margin-top: 0;
-    font-size: 1.25em;
+    font-size: 1.35em;
     text-align: center;
 }
 
 .title__container p {
-    width: 90%;
+    width: 87.5%;
     margin: 0.5em 0 2em;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--dark-gray);
     text-align: center;
+    line-height: 1.6em;
 }
 
 .buttons {
@@ -38,16 +38,18 @@
 }
 
 .button--left {
-    width: 15em;
+    width: 18em;
     margin-right: 0.75em;
     border: none;
     border-radius: 40px;
     -webkit-tap-highlight-color: transparent;
     background: var(--moderate-cyan);
+    font-size: 0.9em;
     font-weight: var(--fw-bold);
     color: #fff;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
 }
 
 .button--left:active {
@@ -58,6 +60,7 @@
 @media (hover:hover) {
     .button--left:hover {
         background: var(--dark-cyan);
+        transition: background-color 0.4s ease-in-out;
     }
 
     .button--left:active {
@@ -71,12 +74,7 @@
     width: 22%;
     font-weight: var(--fw-bold);
     color: var(--dark-gray);
-}
-
-@media (hover:hover) {
-    .button--right:hover {
-        color: rgba(122, 122, 122, 0.75);
-    }
+    transition: color 0.4s ease-in-out;
 }
 
 .button--right img {
@@ -86,7 +84,21 @@
     border-radius: 40px;
     -webkit-tap-highlight-color: transparent;
     background: rgba(0, 0, 0, 0.05);
+    filter: invert(5%) sepia(0%) saturate(978%) hue-rotate(182deg) brightness(109%) contrast(72%);
     cursor: pointer;
+    transition: filter 0.4s ease-in-out;
+}
+
+@media (hover:hover) {
+    .button--right:hover {
+        color: rgba(122, 122, 122, 0.749);
+        transition: color 0.4s ease-in-out;
+    }
+
+    .button--right img:hover {
+        filter: invert(34%) sepia(1%) saturate(0%) hue-rotate(148deg) brightness(99%) contrast(90%);
+        transition: filter 0.4s ease-in-out;
+    }
 }
 
 #bookmark {
@@ -101,6 +113,7 @@
 
 .button--right label span {
     display: none;
+    height: fit-content;
     transform: translate(-7.5em, 1.2em);
 }
 
@@ -114,7 +127,8 @@
     }
 
     .title__container h1 {
-        font-size: 1.8em;
+        font-size: 1.75em;
+        margin-bottom: 0.5em;
     }
 
     .title__container p {
@@ -124,18 +138,19 @@
 
     .buttons {
         justify-content: space-between;
-        width: 100%;
+        width: 87.5%;
         margin-bottom: 2.5em;
         transform: translateX(0);
     }
 
     .button--left {
-        margin-left: 3.5em;
+        width: 13.75em;
+        font-size: 1em;
     }
 
     .button--right {
         width: 0;
-        margin-right: 3em;
+        margin-right: 0.75em;
         transform: translateX(-11.25em);
     }
 
@@ -145,5 +160,13 @@
 
     .button--right label, .button--right label span {
         display: flex;
+    }
+
+    .button--right label {
+        font-size: 1em;
+    }
+
+    .button--right span {
+        margin-top: -0.1em;
     }
 }

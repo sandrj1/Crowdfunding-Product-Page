@@ -30,10 +30,12 @@
     width: 35%;
     border: 1.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+    transition: border 0.4s ease-in-out;
 }
 
 .input__container:hover {
     border: 1.5px solid var(--moderate-cyan);
+    transition: border 0.4s ease-in-out;
 }
 
 .input__container p {
@@ -74,6 +76,7 @@ input[type=number]::-webkit-inner-spin-button {
     color: #fff;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
 }
 
 @media (hover:none) {
@@ -86,6 +89,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (hover:hover) {
     .pledge__buttons button:hover {
         background: var(--dark-cyan);
+        transition: background-color 0.4s ease-in-out;
     }
 
     .pledge__buttons button:active {

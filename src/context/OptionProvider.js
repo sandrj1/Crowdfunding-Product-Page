@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect} from 'react';
 
 export const OptionContext = createContext()
 
@@ -15,27 +15,40 @@ export default function OptionProvider({ children }) {
             'title': 'Bamboo Stand',
             'pledge': 25,
             'quantity': 101,
-            'children': 'You get an ergonomic stand made of natural bamboo. You\'ve helped us launch our promotional campaign, and you’ll be added to a special Backer member list.'
+            'children': 'You get an ergonomic stand made of natural bamboo. You\'ve helped us launch our promotional campaign, and you’ll be added to a special Backer member list.',
+            'reward': 'Select Reward'
         },
         {
             'value': 'black',
             'title': 'Black Edition Stand',
             'pledge': 75,
             'quantity': 64,
-            'children': 'You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.'
+            'children': 'You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.',
+            'reward': 'Select Reward'
         },
         {
             'value': 'mahogany',
             'title': 'Mahogany Special Edition',
             'pledge': 200,
             'quantity': '0',
-            'children': 'You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.'
+            'children': 'You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.',
+            'reward': 'Out of Stock'
         }
     ]
 
     const [modalDefault, setModalDefault] = useState(false);
     const [openId, setOpenId] = useState('');
     const [modalCompleted, setModalCompleted] = useState(false);
+    const [total, setTotal] = useState(89914);
+    const [backers, setBackers] = useState(5007);
+
+    /* useEffect(() => {
+        if (modalDefault) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [modalDefault]) */
 
     return (
         <OptionContext.Provider
@@ -46,7 +59,11 @@ export default function OptionProvider({ children }) {
                 openId,
                 setOpenId,
                 modalCompleted,
-                setModalCompleted
+                setModalCompleted,
+                total,
+                setTotal,
+                backers,
+                setBackers
             }}>
             {children}
         </OptionContext.Provider>
