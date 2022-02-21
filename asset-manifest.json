@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Crowdfunding-Product-Page/static/css/main.e0988355.css",
+    "main.js": "/Crowdfunding-Product-Page/static/js/main.1668a582.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Crowdfunding-Product-Page/static/js/787.28cb0dcd.chunk.js",
+    "static/media/image-hero-desktop.jpg": "/Crowdfunding-Product-Page/static/media/image-hero-desktop.631209c1fe8e34fb78c2.jpg",
+    "static/media/image-hero-mobile.jpg": "/Crowdfunding-Product-Page/static/media/image-hero-mobile.d4f477d4cd11ac3a012f.jpg",
+    "static/media/logo.svg": "/Crowdfunding-Product-Page/static/media/logo.e6f12bc6bbf5e5c65ded26ce3d2904c7.svg",
+    "index.html": "/Crowdfunding-Product-Page/index.html",
+    "static/media/logo-mastercraft.svg": "/Crowdfunding-Product-Page/static/media/logo-mastercraft.dca2a8312b376716a2e0b7dfb8828b86.svg",
+    "static/media/icon-close-modal.svg": "/Crowdfunding-Product-Page/static/media/icon-close-modal.75cea8c6a04d717a1097e73bf9715997.svg",
+    "static/media/icon-close-menu.svg": "/Crowdfunding-Product-Page/static/media/icon-close-menu.32169d313e5fa6171811fd73fe1e3568.svg",
+    "static/media/icon-bookmark.svg": "/Crowdfunding-Product-Page/static/media/icon-bookmark.2bece68024cefa5d44b73b2ade3d4408.svg",
+    "static/media/icon-check.svg": "/Crowdfunding-Product-Page/static/media/icon-check.bdee5269fa45688504fcc6fb78ab8756.svg",
+    "static/media/icon-bookmarked.svg": "/Crowdfunding-Product-Page/static/media/icon-bookmarked.14eeef4fb87166d7df05b00a559b2ba0.svg",
+    "static/media/icon-hamburger.svg": "/Crowdfunding-Product-Page/static/media/icon-hamburger.f8a9f0cf12d419a7d18556f98d81a47e.svg",
+    "main.e0988355.css.map": "/Crowdfunding-Product-Page/static/css/main.e0988355.css.map",
+    "main.1668a582.js.map": "/Crowdfunding-Product-Page/static/js/main.1668a582.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Crowdfunding-Product-Page/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0988355.css",
+    "static/js/main.1668a582.js"
+  ]
+}
