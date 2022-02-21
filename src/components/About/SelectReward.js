@@ -1,6 +1,9 @@
 import './SelectReward.css';
+import { useContext } from 'react';
+import { OptionContext } from '../../context/OptionProvider';
 
 export default function SelectReward({ value, title, pledge, quantity, reward, children }) {
+    const { setModalDefault, setOpenId } = useContext(OptionContext);
 
     return <article className={value === 'mahogany'
         ? 'reward__container disabled'
@@ -13,7 +16,10 @@ export default function SelectReward({ value, title, pledge, quantity, reward, c
         <p className="reward__description">{children}</p>
         <div className="reward__button">
             <p><span>{quantity}</span> left</p>
-            <button>{reward}</button>
+            <button onClick={() => {
+                setModalDefault(true)
+                setOpenId(value)
+            }}>{reward}</button>
         </div>
     </article>
 }

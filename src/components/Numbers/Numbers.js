@@ -5,7 +5,6 @@ import { OptionContext } from '../../context/OptionProvider';
 export default function Numbers() {
     const { total, backers } = useContext(OptionContext);
 
-    const number = 89914;
     return <div className='numbers__container'>
         <div className='numbers__box'>
             <div className='box--left'>

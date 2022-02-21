@@ -3,6 +3,14 @@ import { createContext, useState, useEffect} from 'react';
 export const OptionContext = createContext()
 
 export default function OptionProvider({ children }) {
+    const [modalDefault, setModalDefault] = useState(false);
+    const [openId, setOpenId] = useState('');
+    const [modalCompleted, setModalCompleted] = useState(false);
+    const [total, setTotal] = useState(89914);
+    const [backers, setBackers] = useState(5007);
+    const [qtyBamboo, setQtyBamboo] = useState(101);
+    const [qtyBlack, setQtyBlack] = useState(64);
+
     const options = [
         {
             'value': 'none',
@@ -14,7 +22,7 @@ export default function OptionProvider({ children }) {
             'value': 'bamboo',
             'title': 'Bamboo Stand',
             'pledge': 25,
-            'quantity': 101,
+            'quantity': qtyBamboo,
             'children': 'You get an ergonomic stand made of natural bamboo. You\'ve helped us launch our promotional campaign, and you’ll be added to a special Backer member list.',
             'reward': 'Select Reward'
         },
@@ -22,7 +30,7 @@ export default function OptionProvider({ children }) {
             'value': 'black',
             'title': 'Black Edition Stand',
             'pledge': 75,
-            'quantity': 64,
+            'quantity': qtyBlack,
             'children': 'You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.',
             'reward': 'Select Reward'
         },
@@ -35,12 +43,6 @@ export default function OptionProvider({ children }) {
             'reward': 'Out of Stock'
         }
     ]
-
-    const [modalDefault, setModalDefault] = useState(false);
-    const [openId, setOpenId] = useState('');
-    const [modalCompleted, setModalCompleted] = useState(false);
-    const [total, setTotal] = useState(89914);
-    const [backers, setBackers] = useState(5007);
 
     /* useEffect(() => {
         if (modalDefault) {
@@ -63,7 +65,11 @@ export default function OptionProvider({ children }) {
                 total,
                 setTotal,
                 backers,
-                setBackers
+                setBackers,
+                qtyBamboo,
+                setQtyBamboo,
+                qtyBlack,
+                setQtyBlack
             }}>
             {children}
         </OptionContext.Provider>
