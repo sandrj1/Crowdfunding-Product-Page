@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Crowdfunding-Product-Page/static/css/main.e0988355.css",
-    "main.js": "/Crowdfunding-Product-Page/static/js/main.1668a582.js",
+    "main.css": "/Crowdfunding-Product-Page/static/css/main.a669ac90.css",
+    "main.js": "/Crowdfunding-Product-Page/static/js/main.a858a9c7.js",
     "static/js/787.28cb0dcd.chunk.js": "/Crowdfunding-Product-Page/static/js/787.28cb0dcd.chunk.js",
     "static/media/image-hero-desktop.jpg": "/Crowdfunding-Product-Page/static/media/image-hero-desktop.631209c1fe8e34fb78c2.jpg",
     "static/media/image-hero-mobile.jpg": "/Crowdfunding-Product-Page/static/media/image-hero-mobile.d4f477d4cd11ac3a012f.jpg",
@@ -14,12 +14,12 @@
     "static/media/icon-check.svg": "/Crowdfunding-Product-Page/static/media/icon-check.bdee5269fa45688504fcc6fb78ab8756.svg",
     "static/media/icon-bookmarked.svg": "/Crowdfunding-Product-Page/static/media/icon-bookmarked.14eeef4fb87166d7df05b00a559b2ba0.svg",
     "static/media/icon-hamburger.svg": "/Crowdfunding-Product-Page/static/media/icon-hamburger.f8a9f0cf12d419a7d18556f98d81a47e.svg",
-    "main.e0988355.css.map": "/Crowdfunding-Product-Page/static/css/main.e0988355.css.map",
-    "main.1668a582.js.map": "/Crowdfunding-Product-Page/static/js/main.1668a582.js.map",
+    "main.a669ac90.css.map": "/Crowdfunding-Product-Page/static/css/main.a669ac90.css.map",
+    "main.a858a9c7.js.map": "/Crowdfunding-Product-Page/static/js/main.a858a9c7.js.map",
     "787.28cb0dcd.chunk.js.map": "/Crowdfunding-Product-Page/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0988355.css",
-    "static/js/main.1668a582.js"
+    "static/css/main.a669ac90.css",
+    "static/js/main.a858a9c7.js"
   ]
 }
