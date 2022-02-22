@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { OptionContext } from '../../context/OptionProvider';
 
 export default function Numbers() {
-    const { total, backers } = useContext(OptionContext);
+    const { total, backers, widthTotal } = useContext(OptionContext);
 
     return <div className='numbers__container'>
         <div className='numbers__box'>
@@ -21,7 +21,7 @@ export default function Numbers() {
             </div>
         </div>
         <div className='progress__bar--goal'>
-            <div className='progress__bar--total'></div>
+            <div style={{width: `${widthTotal}%`}} className='progress__bar--total'></div>
         </div>
     </div>
 }

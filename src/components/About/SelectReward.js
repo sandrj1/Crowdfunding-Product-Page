@@ -5,20 +5,25 @@ import { OptionContext } from '../../context/OptionProvider';
 export default function SelectReward({ value, title, pledge, quantity, reward, children }) {
     const { setModalDefault, setOpenId } = useContext(OptionContext);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     return <article className={value === 'mahogany'
         ? 'reward__container disabled'
         : 'reward__container'
     }>
-        <div className="reward__title">
+        <div className='reward__title'>
             <h3>{title}</h3>
             <p>Pledge ${pledge} or more</p>
         </div>
-        <p className="reward__description">{children}</p>
-        <div className="reward__button">
+        <p className='reward__description'>{children}</p>
+        <div className='reward__button'>
             <p><span>{quantity}</span> left</p>
             <button onClick={() => {
                 setModalDefault(true)
                 setOpenId(value)
+                scrollToTop()
             }}>{reward}</button>
         </div>
     </article>

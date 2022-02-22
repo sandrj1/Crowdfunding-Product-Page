@@ -11,7 +11,8 @@ export default function ModalDefault() {
     const { options, setModalDefault, openId, setOpenId, modalCompleted } = useContext(OptionContext)
 
     return reactDom.createPortal(
-        <div className='modal__container'>
+        <div
+            className='modal__container'>
             {!modalCompleted
                 ? <section className='section--default'>
                     <div className='section__title'>
@@ -48,7 +49,7 @@ export default function ModalDefault() {
                         </article>
                     ))}
                 </section>
-                : <div className="modal__container--desktop">
+                : <div className='modal__container--desktop'>
                     <ModalCompleted />
                 </div>
             }

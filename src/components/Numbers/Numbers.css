@@ -56,7 +56,6 @@
 }
 
 .progress__bar--total {
-    width: 80%;
     height: 0.6em;
     border-radius: 40px;
     background: var(--moderate-cyan);

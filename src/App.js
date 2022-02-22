@@ -7,6 +7,7 @@ import Numbers from './components/Numbers/Numbers';
 import About from './components/About/About';
 
 function App() {
+
     return (
         <OptionProvider>
             <div className='app'>

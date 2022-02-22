@@ -10,6 +10,7 @@ export default function OptionProvider({ children }) {
     const [backers, setBackers] = useState(5007);
     const [qtyBamboo, setQtyBamboo] = useState(101);
     const [qtyBlack, setQtyBlack] = useState(64);
+    const [widthTotal, setWidthTotal] = useState((total / 1000).toFixed(0));
 
     const options = [
         {
@@ -44,6 +45,15 @@ export default function OptionProvider({ children }) {
         }
     ]
 
+    useEffect(() => {
+        if (total <= 100000) {
+            setWidthTotal((total / 1000).toFixed(0))
+        } else {
+            setWidthTotal(100)
+        }
+    }, [total])
+    
+
     /* useEffect(() => {
         if (modalDefault) {
             document.body.style.overflow = 'hidden';
@@ -69,7 +79,9 @@ export default function OptionProvider({ children }) {
                 qtyBamboo,
                 setQtyBamboo,
                 qtyBlack,
-                setQtyBlack
+                setQtyBlack,
+                widthTotal,
+                setWidthTotal
             }}>
             {children}
         </OptionContext.Provider>

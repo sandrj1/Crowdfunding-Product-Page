@@ -86,13 +86,17 @@
     background: rgba(0, 0, 0, 0.05);
     filter: invert(5%) sepia(0%) saturate(978%) hue-rotate(182deg) brightness(109%) contrast(72%);
     cursor: pointer;
-    transition: filter 0.4s ease-in-out;
 }
 
 @media (hover:hover) {
     .button--right:hover {
         color: rgba(122, 122, 122, 0.749);
         transition: color 0.4s ease-in-out;
+    }
+
+    .button--right img {
+        background: rgba(0, 0, 0, 0.05);
+        transition: filter 0.4s ease-in-out;
     }
 
     .button--right img:hover {

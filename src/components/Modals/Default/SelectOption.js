@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { OptionContext } from '../../../context/OptionProvider';
 
 export default function SelectOption({ value, title, pledge, quantity, children }) {
-    const { openId, setOpenId } = useContext(OptionContext)
+    const { openId } = useContext(OptionContext)
 
     return <label
         htmlFor={value} className={value === 'mahogany' ? 'option__label--disabled' : 'option__label'}>
