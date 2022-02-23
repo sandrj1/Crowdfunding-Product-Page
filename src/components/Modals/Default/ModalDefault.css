@@ -90,11 +90,41 @@ summary {
     justify-content: center;
 }
 
+@media screen and (min-width: 400px) {
+    .section--default {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .section--default {
+        width: 82.5%;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .section--default {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .section--default {
+        width: 67.5%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .section--default {
+        width: 60%;
+    }
+}
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
     .section--default {
-        width: 50.5%;
+        width: 80%;
         /* transform: translateY(11.5em);  CAMBIATO PER MARGIN*/
         margin: 11.5em 0;
         padding-bottom: 2em;
@@ -123,5 +153,59 @@ summary {
 
     .option__container {
         padding-bottom: 1.2em;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .section--default {
+        width: 77.5%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section--default {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .section--default {
+        width: 72.5%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .section--default {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .section--default {
+        width: 67.5%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .section--default {
+        width: 63%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .section--default {
+        width: 58.5%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .section--default {
+        width: 54%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section--default {
+        width: 50.5%;
     }
 }

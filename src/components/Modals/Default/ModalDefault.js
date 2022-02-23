@@ -8,7 +8,7 @@ import SelectPledge from './SelectPledge';
 import ModalCompleted from '../Completed/ModalCompleted';
 
 export default function ModalDefault() {
-    const { options, setModalDefault, openId, setOpenId, modalCompleted } = useContext(OptionContext)
+    const { options, setModalDefault, openId, setOpenId, modalCompleted } = useContext(OptionContext);
 
     return reactDom.createPortal(
         <div

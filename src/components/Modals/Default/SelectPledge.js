@@ -41,7 +41,7 @@ export default function SelectPledge({ value, pledge }) {
                     scrollToTop()
                 }}
                     className={inputValue < pledge || inputValue === 0 
-                        ? 'pledge__button--disabled'
+                        ? 'pledge__button disabled'
                         : null}
                 >Continue</button>
             </div>

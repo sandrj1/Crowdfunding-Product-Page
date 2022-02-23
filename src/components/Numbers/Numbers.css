@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 768px) {
     .numbers__container {
-        width: 57.5%;
+        width: 80%;
     }
 
     .numbers__box {
@@ -93,5 +93,59 @@
 
     .box--left h2, .box--left p {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .numbers__container {
+        width: 77.5%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .numbers__container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .numbers__container {
+        width: 72.5%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .numbers__container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .numbers__container {
+        width: 67.5%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .numbers__container {
+        width: 63%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .numbers__container {
+        width: 58.5%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .numbers__container {
+        width: 54%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .numbers__container {
+        width: 50.5%;
     }
 }

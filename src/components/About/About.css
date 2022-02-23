@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 768px) {
     .about__container {
-        width: 57.5%;
+        width: 80%;
         padding-bottom: 1.75em;
     }
 
@@ -48,5 +48,52 @@
 
     .about__container section p {
         margin: 1.75em 0;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .about__container {
+        width: 77.5%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .about__container {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 980px) {
+    .about__container {
+        width: 72.5%;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .about__container {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1140px) {
+    .about__container {
+        width: 67.5%;
+    }
+}
+@media screen and (min-width: 1220px) {
+    .about__container {
+        width: 63%;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .about__container {
+        width: 58.5%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .about__container {
+        width: 54%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .about__container {
+        width: 50.5%;
     }
 }

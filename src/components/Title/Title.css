@@ -125,9 +125,40 @@
     color: var(--moderate-cyan);
 }
 
+
+@media screen and (max-width: 320px) {
+    .button--left {
+        width: 15em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .button--left {
+        width: 13.5em;
+    }
+
+    .button--right {
+        margin-right: 0.5em;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .button--left {
+        width: 16.5em;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .button--left {
+        width: 18em;
+    }
+}
+
+/* Desktop */
+
 @media screen and (min-width: 768px) {
     .title__container {
-        width: 57.5%;
+        width: 80%;
     }
 
     .title__container h1 {
@@ -172,5 +203,59 @@
 
     .button--right span {
         margin-top: -0.1em;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .title__container {
+        width: 77.5%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .title__container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .title__container {
+        width: 72.5%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .title__container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .title__container {
+        width: 67.5%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .title__container {
+        width: 63%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .title__container {
+        width: 58.5%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .title__container {
+        width: 54%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .title__container {
+        width: 50.5%;
     }
 }
