@@ -54,13 +54,14 @@ export default function OptionProvider({ children }) {
     }, [total])
     
 
-    /* useEffect(() => {
+    /* Prevent body from scrolling when modal is open */
+    useEffect(() => {
         if (modalDefault) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'unset';
         }
-    }, [modalDefault]) */
+    }, [modalDefault])
 
     return (
         <OptionContext.Provider
