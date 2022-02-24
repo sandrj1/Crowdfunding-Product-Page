@@ -19,10 +19,6 @@ export default function SelectPledge({ value, pledge }) {
             setQtyBlack(qtyBlack - 1)
         }
     }
-
-    const scrollToTop = () => {
-        window.scrollTo({top: 0, behavior: 'auto'})
-    }
     
     return < div className='pledge__container' >
         <div className='pledge__box'>
@@ -38,7 +34,6 @@ export default function SelectPledge({ value, pledge }) {
                     setTotal(total + inputValue)
                     setBackers(backers + 1)
                     handleQuantity()
-                    scrollToTop()
                 }}
                     className={inputValue < pledge || inputValue === 0 
                         ? 'pledge__button disabled'

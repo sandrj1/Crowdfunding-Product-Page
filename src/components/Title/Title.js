@@ -28,7 +28,9 @@ export default function Title() {
             <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
             <div className='buttons'>
                 <button className='button--left'
-                    onClick={() => handleModalDefault()}
+                    onClick={() => {
+                        handleModalDefault()
+                    }}
                 >Back this project</button>
                 <div className='button--right'>
                     <input type='checkbox' id='bookmark' name='bookmark' value='bookmark'
