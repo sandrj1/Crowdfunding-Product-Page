@@ -71,7 +71,7 @@
     .numbers__box {
         flex-direction: row;
         width: 87.5%;
-        margin-top: 2em;
+        margin-top: 2.5em;
     }
 
     .box--left, .box--center, .box--right {
@@ -91,8 +91,16 @@
         margin-left: 20%;
     }
 
+    .numbers__box p {
+        padding: 0.5em 0 1em;
+    }
+
     .box--left h2, .box--left p {
         margin: 0;
+    }
+
+    .progress__bar--goal {
+        margin-bottom: 3em;
     }
 }
 
